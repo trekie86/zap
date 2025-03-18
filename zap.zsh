@@ -76,7 +76,7 @@ function plug() {
         # If the basename directory exists, then local source only
         if [ -d "${plugin_absolute:h}" ]; then
             [[ -f "${plugin_absolute}" ]] && source "${plugin_absolute}"
-            print_elapsed 
+            print_elapsed
             return
         fi
 
